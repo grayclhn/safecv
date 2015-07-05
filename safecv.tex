@@ -1,0 +1,49 @@
+\usepackage{
+    calc,
+    hyperref,
+    ragged2e,
+    newtxtext, % <- default safe `professional` font.
+    newtxmath,
+    url,
+}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[letterspace=30]{microtype}
+
+\RaggedRight
+\urlstyle{same} %<- Do not monospace urls.
+\newcommand{\allcaps}[1]{\textls[30]{\MakeUppercase{#1}}}
+
+% Set spacing and size of sections and subsections. (Don't use
+% anything below subsection.)
+\usepackage[tiny,raggedright]{titlesec}
+\titleformat{\section}{\bf\lsstyle\uppercase}{}{}{}{}
+\titlespacing*{\section}{0pt}{2\baselineskip}{\baselineskip}
+\titlespacing*{\subsection}{0pt}{\baselineskip}{\itemsep}
+
+% Set up list formatting. Renew `\descfont` to change handling of the
+% labels in description lists. If you change fonts to one that uses
+% proportional number spacing, you'll need to set it to tabular in
+% these labels.
+\usepackage[shortlabels,inline]{enumitem}
+\newlength\dgap
+\newlength\dwidth
+\setlength{\dgap}{\widthof{ -- }}
+\setlength{\dwidth}{\widthof{2000}}
+\setenumerate{topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=0pt}
+\setitemize{topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=0pt,label={}}
+\setdescription{font=\normalfont,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=!,labelwidth=\dwidth,labelsep=\dgap}
+% Use `\p` to insert periods that don't take up space, e.g. `2009\p`.
+\newcommand{\p}{\rlap{.}}
+
+% Change the displayed title to emphasize the author and radically
+% reduce spacing.
+\makeatletter
+\def\maketitle{%
+\begin{center}%
+\par{\textls{\MakeUppercase{\textbf{\large\@author}}}}%
+\vspace{\itemsep}%
+\par{\@title, \@date}%
+\end{center}%
+}
+\makeatother

@@ -1,22 +1,31 @@
 safecv
 ======
 
-This repository defines a simple LaTeX document class for your
+This repository defines a simple LaTeX preamble for your
 Curriculum Vitae that follows
 ["Dr. Karen's" academic CV rules](http://theprofessorisin.com/2012/01/12/dr-karens-rules-of-the-academic-cv/).
 
 Usage and options
 -----------------
 
-You use this class just as you would use other LaTeX document classes:
+Put the file `safecv.tex` in the same directory as your CV, then
+`\input` it into the preamble:
+
 ```
-\documentclass{rulescv}
+\documentclass[12pt]{article}
+\author{Young Scholar}
+\title{Curriculum Vitae}
+\input{safecv}
 \begin{document}
-[LaTeX code]
+\maketitle
+\section*{Contact information}
+Shout
+\section*{Education}
+blah blah bla
 \end{document}
 ```
 
-No options defined yet!
+The file `example.tex` gives a longer example.
 
 License and copyright
 ---------------------
@@ -49,4 +58,4 @@ Contact info
 ------------
 
 If you find problems, please report an issue at
-<https://github.com/grayclhn/safecv.git>.
+<https://github.com/grayclhn/safecv>.
