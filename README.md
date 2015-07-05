@@ -5,6 +5,8 @@ This repository defines a simple LaTeX preamble for your
 Curriculum Vitae that follows
 ["Dr. Karen's" academic CV rules](http://theprofessorisin.com/2012/01/12/dr-karens-rules-of-the-academic-cv/).
 
+Let's call this version 0.1.0.
+
 Usage and options
 -----------------
 
