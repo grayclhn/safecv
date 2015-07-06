@@ -1,0 +1,224 @@
+% In general, remove the sections and subsections that are empty.
+% This is based on the CV advice at
+% <http://theprofessorisin.com/2012/01/12/dr-karens-rules-of-the-academic-cv/>
+\documentclass[12pt]{article}%
+\author{Firstname McLastname}
+\title{Curriculum Vitae}
+\date{\today}
+
+\frenchspacing
+\input{safecv}
+\usepackage{tabularx}
+
+\begin{document}
+\maketitle
+\section*{Contact Information}
+\begin{tabular}{@{}lrl@{}}
+Building and office number & Office  & 123-456-7890                         \\
+Your Department            & Mobile  & 123-456-790                          \\
+Your University            & Email   & \url{youraccount@youruniversity.edu} \\
+City, State Zipcode        & Website & \url{http://example.edu/~youraccount} %<- If you don't have one yet, get a simple web page.
+\end{tabular}
+
+\subsection*{Department Contacts}
+\begin{tabular}{@{}llll@{}}
+Placement Director & Director's Name & \url{account@university.edu} & 123-456-790 \\
+Graduate Coordinator & Coordinator's Name & \url{account@university.edu} & 123-456-790
+\end{tabular}
+
+\section*{Education}
+
+\begin{description}[noitemsep]
+\item[year] PhD Your Field. Your University (expected)
+\item Dissertation title: \textit{Several essays on my research} %<- If you don't have a title, make one up
+\item Advisor: Advisor name
+\item[year] \allcaps{MS} Your Field. Your University (If appropriate)
+\item[year] \allcaps{BA} Undergraduate Major. Undergraduate University
+\end{description}
+
+\section*{Research and Teaching Interests}
+% You should be prepared to teach a graduate elective in the subject
+% listed as 'Interest 1' and to have some enthusiasm about teaching
+% undergraduate courses in the other subjects listed here.
+Interest 1; Interest 2; Interest 3
+
+\section*{Honors and Awards}
+
+\begin{description}[noitemsep]
+\item[year] Name of most recent award
+\item[year] Name of second most recent award, etc.
+% Keep going in reverse chronological order. Do not include awards
+% from undergrad unless they were *extremely* impressive
+\end{description}
+
+% \section*{Grants and Fellowships}
+% \begin{description}[noitemsep]
+% \item[year] Details of most recent grant or fellowship
+% \item[year] Details of second most recent grant or fellowship
+% % Keep going in reverse chronological order
+% \end{description}
+
+\section*{Publications} %<- you can also just call this 'research'
+% Uncomment any that are appropriate, then add bibliographical information
+%
+% \subsection*{Books}
+% \subsection*{Edited Volumes}
+% \subsection*{Refereed Journal Articles}
+% \begin{itemize}
+% \item Bibliographic details for article 1
+% \item Bibliographic details for article 2
+% \end{itemize}
+% \subsection*{Book Chapters}
+% \subsection*{Conference Proceedings}
+% \subsection*{Encyclopedia Entries}
+% \subsection*{Book Reviews}
+% \subsection*{Manuscripts in Submission}
+% \begin{itemize}
+% \item Article 1. Revise and resubmit at \textit{Journal}
+% \item Article 2. Submitted to \textit{Journal}
+% \end{itemize}
+\subsection*{Job Market Paper}
+
+``Name of job market paper'' (joint with coauthors, if any)
+
+\vspace{\itemsep}
+
+\smallcaps{Abstract}: People often put the abstract of their job market
+paper here. It is optional. But don't do anything weird like putting
+it all in italics or small caps.
+  
+\subsection*{Other Manuscripts in Preparation}
+% You should only list something here if it is actually on your
+% website or could be emailed to a stranger on short notice.
+\begin{itemize}
+\item Name of other paper 1
+\item Name of other paper 2, etc.
+\end{itemize}
+
+% \subsection*{Popular writings}
+% \begin{itemize}
+% \item Op-Ed 1, with bibliographical information
+% \item Op-Ed 2, with bibliographical information
+% \end{itemize}
+
+\section*{External Presentations}
+% List in reverse chronological, as always; uncomment the relevant
+% categories, if any.
+%
+% \subsection*{Invited Seminars}
+% \begin{description}
+% \item[year] List the name of each seminar for that year, with (month/day) in parentheses
+% \item[year] List the name of each seminar for that year (which is
+% older than the previous line), with (month/day) in parentheses
+% \end{description}
+% \subsection*{Invited Conference Presentations}
+% % List in reverse chronological, as always
+% \begin{description}
+% \item[year] Same rules for listing as for the ``Invited Seminars''
+% \end{description}
+% \subsection*{Other Presentations}
+%% If this is the only category, remove the ``Other presentations''
+%% subsection heading and just list this directly under ``External
+%% presentations''
+\begin{description}
+\item[year] List the name of each seminar for that year, with
+(month/day) in parentheses. This list should not include presentations
+you have given at your university, only off-campus presentations.
+\end{description}
+
+\section*{Professional Experience}
+% Do not list course number, just course title. You can add
+% clarifications like "Masters level" or "MBA" for non-undergraduate
+% teaching. e.g.
+%
+% \item MBA Econometrics 1 (2 times)
+%
+% even if it is not the official title of the class. (As long as it's
+% accurate!)
+%
+% \subsection*{Courses Taught as Primary Instructor}
+% \begin{itemize}[noitemsep]
+% \item Course title (number of times you have taught it)
+% \item Other course title (n)
+% \end{itemize}
+%
+% If you've been a TA for several graduate classes, you may want to
+% put that separately.
+\subsection*{Teaching Assistant}
+Class 1, Class 2, Class 3, etc.
+
+\subsection*{Research Assistant}
+% List, as always, in reverse chronological order. Especially relevant
+% internships can go here, consulting jobs, RA work, etc.
+\begin{description}
+\item[start\,--\,end] Research Assistant for Prof 1 and Prof 2. You can
+add a single sentence explaining what you did, if it was interesting.
+\item[start\,--\,end] Another job. You can add another sentence
+explaining what you did.
+\end{description}
+
+\section*{Professional Service}
+% \subsection*{Editorial positions}
+% \begin{description}[noitemsep]
+% \item[start\,--\,end] Position, \textit{Journal name}
+% \end{description}
+
+\subsection*{Journal Referee}
+% Put the most prestigous journals first! Don't bury Econometrica in
+% the middle of the list.
+\textit{Journal title 1};
+\textit{Journal title 2}
+
+% \subsection*{University Service}
+% % Reverse chronological order
+% \begin{description}[noitemsep]
+% \item[start\,--\,end] Position (no details.)
+% \end{description}
+% \subsection*{Departmental Service}
+% % Reverse chronological order
+% \begin{description}[noitemsep]
+% \item[start\,--\,end] Position (no details.)
+% \end{description}
+
+\subsection*{Professional Membership}
+List the professional societies you belong to.
+
+% \section*{Media Coverage}
+% % Reverse chronological order
+% \begin{itemize}
+% \item Bibliographic information for the article, if you were written
+% up in the \emph{New York Times}. (Or on the news, or whatever.)
+% \item Bibliographic information for the second article.
+% \end{itemize}
+\section*{Languages}
+% Optional, obviously, and leave it out if the only one is "English"
+\begin{description}[noitemsep]
+\item[Language:] Fluency, etc.
+\end{description}
+
+\section*{References}
+
+\begin{itemize*}
+\item
+\begin{tabular}{@{}l}
+  Name 1                  \\
+  Address 1               \\
+  123-456-7890            \\
+  \url{email@example.edu}
+\end{tabular}
+\item 
+\begin{tabular}{l}
+  Name 2                  \\
+  Address 2               \\
+  123-456-7890            \\
+  \url{email@example.edu}
+\end{tabular}
+\item 
+\begin{tabular}{l}
+  Name 3                  \\
+  Address 3               \\
+  123-456-7890            \\
+  \url{email@example.edu}
+\end{tabular}
+\end{itemize*}
+\end{document}
