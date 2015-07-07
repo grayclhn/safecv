@@ -1,23 +1,37 @@
+\usepackage[T1]{fontenc}
 \usepackage{
     calc,
+    fancyhdr,
     hyperref,
     ragged2e,
     newtxtext, % <- default safe `professional` font.
-    newtxmath,
+    newtxmath, % <- default safe `professional` font.
+    textcomp,
     url,
 }
-\usepackage[T1]{fontenc}
+% If you want the CV to look better, use commercial fonts instead of
+% the default 'Times.' Lucida Bright looks great. (But you'll have to
+% buy it  through TUG.)
+% \usepackage{lucidabr}
 \usepackage[margin=1in]{geometry}
-\usepackage[letterspace=30]{microtype}
+\usepackage[letterspace=45]{microtype}
+
+% Change the page number to old-style numbers, for no reason in
+% particular.
+\pagestyle{fancy}
+\cfoot{\oldstylenums{\thepage}}
+\renewcommand{\headrulewidth}{0pt}
 
 \RaggedRight
 \urlstyle{same} %<- Do not monospace urls.
-\newcommand{\allcaps}[1]{\textls[30]{\MakeUppercase{#1}}}
+\newcommand{\allcaps}[1]{\textls{\MakeUppercase{#1}}}
+\newcommand{\smallcaps}[1]{\textls\textsc{\MakeLowercase{#1}}}
 
 % Set spacing and size of sections and subsections. (Don't use
 % anything below subsection.)
 \usepackage[tiny,raggedright]{titlesec}
 \titleformat{\section}{\bf\lsstyle\uppercase}{}{}{}{}
+\titleformat{\subsection}{\bf}{}{}{}{}
 \titlespacing*{\section}{0pt}{2\baselineskip}{\baselineskip}
 \titlespacing*{\subsection}{0pt}{\baselineskip}{\itemsep}
 
@@ -28,7 +42,7 @@
 \usepackage[shortlabels,inline]{enumitem}
 \newlength\dgap
 \newlength\dwidth
-\setlength{\dgap}{\widthof{ -- }}
+\setlength{\dgap}{\widthof{\,--\,}}
 \setlength{\dwidth}{\widthof{2000}}
 \setenumerate{topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=0pt}
 \setitemize{topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=0pt,label={}}
@@ -41,7 +55,7 @@
 \makeatletter
 \def\maketitle{%
 \begin{center}%
-\par{\textls{\MakeUppercase{\textbf{\large\@author}}}}%
+\par{\MakeUppercase{\textbf{\lsstyle \@author}}}%
 \vspace{\itemsep}%
 \par{\@title, \@date}%
 \end{center}%
