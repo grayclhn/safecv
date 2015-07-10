@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+0.2.1
+-----
+Fixes error that was preventing options from being passed to the
+article parent class
+
 0.2.0
 -----
 + Converts basic LaTeX include file to a proper document class
