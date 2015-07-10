@@ -5,16 +5,23 @@ This repository defines a simple LaTeX preamble for your
 Curriculum Vitae that follows
 ["Dr. Karen's" academic CV rules](http://theprofessorisin.com/2012/01/12/dr-karens-rules-of-the-academic-cv/).
 
+The CV is typeset in a Times New Roman clone. You are certainly
+welcome to change it, but keep in mind that many people view this font
+as the "standard" professional font and will distrust any
+alternatives, making it probably the safest choice available. I would
+especially discourage you from changing it back to Computer Modern.
+
 Let's call this version 0.1.0.
 
 Usage and options
 -----------------
 
-Put the file `safecv.tex` in the same directory as your CV, then
-`\input` it into the preamble:
+Put the file `safecv.cls` in the same directory as your CV, then use
+it as a document class. It takes the same options as the `article`
+class.
 
 ```
-\documentclass[12pt]{article}
+\documentclass[12pt]{safecv}
 \author{Young Scholar}
 \title{Curriculum Vitae}
 \input{safecv}
@@ -27,14 +34,32 @@ blah blah bla
 \end{document}
 ```
 
-The file `example.tex` gives a longer example.
+The files `template-grad.tex` and `template-prof.tex` give longer
+examples. Both are templates that you can use for your own CV. The
+`template-grad.tex` file is intended for graduate students entering
+the academic job market for the first time.
+
+Dependencies
+------------
+This class uses the following LaTeX packages:
++ `fontenc`
++ `calc`
++ `fancyhdr`
++ `hyperref`
++ `ragged2e`
++ `newtxtext`
++ `newtxmath`
++ `textcomp`
++ `url`
++ `geometry`
++ `microtype`
 
 License and copyright
 ---------------------
 
 This package is licensed under the MIT "Expat" License
 
-> Copyright (c) 2014, Gray Calhoun <gray@clhn.org>.
+> Copyright (c) 2015, Gray Calhoun <gray@clhn.org>.
 > 
 > Permission is hereby granted, free of charge, to any person
 > obtaining a copy of this software and associated documentation files

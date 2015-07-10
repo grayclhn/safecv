@@ -1,20 +1,18 @@
-\usepackage[T1]{fontenc}
-\usepackage{
-    calc,
-    fancyhdr,
-    hyperref,
-    ragged2e,
-    newtxtext, % <- default safe `professional` font.
-    newtxmath, % <- default safe `professional` font.
-    textcomp,
-    url,
-}
-% If you want the CV to look better, use commercial fonts instead of
-% the default 'Times.' Lucida Bright looks great. (But you'll have to
-% buy it  through TUG.)
-% \usepackage{lucidabr}
-\usepackage[margin=1in]{geometry}
-\usepackage[letterspace=45]{microtype}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{my_cv}[2015/07/09 A very conservative US CV class]
+
+\LoadClass{article}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{calc} 
+\RequirePackage{fancyhdr}
+\RequirePackage{hyperref}
+\RequirePackage{ragged2e}
+\RequirePackage{newtxtext} % <- default safe `professional` font.
+\RequirePackage{newtxmath} % <- default safe `professional` font.
+\RequirePackage{textcomp}
+\RequirePackage{url}
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage[letterspace=45]{microtype}
 
 % Change the page number to old-style numbers, for no reason in
 % particular.
@@ -35,10 +33,7 @@
 \titlespacing*{\section}{0pt}{2\baselineskip}{\baselineskip}
 \titlespacing*{\subsection}{0pt}{\baselineskip}{\itemsep}
 
-% Set up list formatting. Renew `\descfont` to change handling of the
-% labels in description lists. If you change fonts to one that uses
-% proportional number spacing, you'll need to set it to tabular in
-% these labels.
+% Set up list formatting.
 \usepackage[shortlabels,inline]{enumitem}
 \newlength\dgap
 \newlength\dwidth
