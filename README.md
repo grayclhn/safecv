@@ -27,7 +27,7 @@ class.
 \documentclass[12pt]{safecv}
 \author{Young Scholar}
 \title{Curriculum Vitae}
-\input{safecv}
+
 \begin{document}
 \maketitle
 \section*{Contact information}
