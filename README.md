@@ -11,6 +11,11 @@ as the "standard" professional font and will distrust any
 alternatives, making it probably the safest choice available. I would
 especially discourage you from changing it back to Computer Modern.
 
+You can get an idea of the final output by looking at pdfs compiled
+from the latest version of the templates:
++ [template-grad.pdf](https://github.com/grayclhn/safecv/releases/download/v0.2.0/template-grad.pdf)
++ [template-grad.pdf](https://github.com/grayclhn/safecv/releases/download/v0.2.0/template-prof.pdf)
+
 Usage and options
 -----------------
 
