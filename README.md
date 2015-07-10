@@ -11,8 +11,6 @@ as the "standard" professional font and will distrust any
 alternatives, making it probably the safest choice available. I would
 especially discourage you from changing it back to Computer Modern.
 
-Let's call this version 0.1.0.
-
 Usage and options
 -----------------
 
