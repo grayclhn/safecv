@@ -1,5 +1,5 @@
-safecv
-======
+safecv.cls
+==========
 
 This repository defines a simple LaTeX preamble for your
 Curriculum Vitae that follows
