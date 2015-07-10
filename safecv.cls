@@ -1,6 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{my_cv}[2015/07/09 A very conservative US CV class]
 
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions\relax
 \LoadClass{article}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{calc} 
