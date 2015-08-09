@@ -38,7 +38,7 @@
 \usepackage[shortlabels,inline]{enumitem}
 \newlength\dgap
 \newlength\dwidth
-\setlength{\dgap}{\widthof{\,--\,}}
+\setlength{\dgap}{\widthof{--}}
 \setlength{\dwidth}{\widthof{2000}}
 \setenumerate{topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=0pt}
 \setitemize{topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=0pt,label={}}
