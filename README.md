@@ -13,10 +13,10 @@ especially discourage you from changing it back to Computer Modern.
 
 You can get an idea of the final output by looking at pdfs compiled
 from the latest version of the templates:
-+ [template-grad.pdf](https://github.com/grayclhn/safecv/releases/download/v0.2.1/template-grad.pdf)
-+ [template-prof.pdf](https://github.com/grayclhn/safecv/releases/download/v0.2.1/template-prof.pdf)
++ [template-grad.pdf](https://github.com/grayclhn/safecv/releases/download/v0.2.2/template-grad.pdf)
++ [template-prof.pdf](https://github.com/grayclhn/safecv/releases/download/v0.2.2/template-prof.pdf)
 
-The current version is 0.2.1.
+The current version is 0.2.2.
 
 Usage and options
 -----------------

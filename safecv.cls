@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{my_cv}[2015/07/10 A very conservative US CV class]
+\ProvidesClass{my_cv}[2015/08/08 A very conservative US CV class, version 0.2.2]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
