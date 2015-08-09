@@ -25,7 +25,6 @@
 \RaggedRight
 \urlstyle{same} %<- Do not monospace urls.
 \newcommand{\allcaps}[1]{\textls{\MakeUppercase{#1}}}
-\newcommand{\smallcaps}[1]{\textls\textsc{\MakeLowercase{#1}}}
 
 % Set spacing and size of sections and subsections. (Don't use
 % anything below subsection.)
